@@ -67,7 +67,7 @@ public class GPS_Service extends Service {
         };
         locationManager = (LocationManager) getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
 
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,15000,0,listener);
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,5000,0,listener);
     }
 
     @Override
